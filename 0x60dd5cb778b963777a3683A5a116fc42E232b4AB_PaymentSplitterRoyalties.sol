@@ -25,7 +25,7 @@ abstract contract Context {
     }
 }
 
-pragma solidity ^0.8.1;
+
 
 /**
  * @dev Collection of functions related to the address type
@@ -267,7 +267,7 @@ library Address {
     }
 }
 
-pragma solidity ^0.8.0;
+
 
 /**
  * @dev Interface of the ERC20 Permit extension allowing approvals to be made via signatures, as defined in
@@ -325,7 +325,6 @@ interface IERC20Permit {
     function DOMAIN_SEPARATOR() external view returns (bytes32);
 }
 
-pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -405,7 +404,7 @@ interface IERC20 {
     ) external returns (bool);
 }
 
-pragma solidity ^0.8.0;
+
 
 /**
  * @title SafeERC20
@@ -514,10 +513,6 @@ library SafeERC20 {
         }
     }
 }
-
-pragma solidity ^0.8.0;
-
-
 
 
 /**
@@ -727,7 +722,6 @@ contract PaymentSplitter is Context {
 }
 
 
-pragma solidity 0.8.7;
 
 
 contract PaymentSplitterRoyalties is PaymentSplitter {
