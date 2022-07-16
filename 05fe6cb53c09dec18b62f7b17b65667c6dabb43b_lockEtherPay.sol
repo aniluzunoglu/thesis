@@ -31,7 +31,7 @@ library SafeMath {
 
 contract token {
 
-  function balanceOf(address _owner) public constant returns (uint256 balance);
+  function balanceOf(address _owner) public  returns (uint256 balance);
   function transfer(address _to, uint256 _value) public returns (bool success);
 
 }
@@ -82,7 +82,7 @@ contract lockEtherPay is Ownable {
     beneficiary = 0xE631CBe2c6dA5defe13FB0bFb380a43d97195a91;
   }
 
-  function tokenBalance() constant public returns (uint256){
+  function tokenBalance()  public returns (uint256){
     return token_reward.balanceOf(this);
   }
 
@@ -94,7 +94,7 @@ contract lockEtherPay is Ownable {
   	isLocked = true;
   }
 
-  function lockOver() constant public returns (bool){
+  function lockOver()  public returns (bool){
   	uint256 current_time = now;
 	return current_time > end_time;
   }
